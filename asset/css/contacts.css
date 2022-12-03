@@ -1,0 +1,53 @@
+main {
+  width: 1200px;
+  margin: 25px auto;
+}
+h1 {
+  font-size: 26px;
+}
+.nav-container {
+  width: 1200px;
+  height: 50px;
+}
+.nav-icon {
+  margin-right: 20px !important;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px !important;
+}
+
+.ion-icon {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.ion-nav-icon {
+  font-size: 25px;
+}
+.drop-down-icon {
+  font-size: 20px;
+}
+
+.action-icon {
+  --ionicon-stroke-width: 36px;
+  font-size: 15px;
+}
+
+.navbar-brand.bootstrap-icon {
+  transition: 0.2s ease-in-out transform !important;
+}
+
+.navbar-brand.bootstrap-icon:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.title-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.table {
+  margin-top: 35px;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+}
