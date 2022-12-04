@@ -36,7 +36,9 @@ signupBtn.addEventListener("click", function (e) {
           "";
       signupPassField.blur();
       containerApp.style.opacity = 0;
-      window.location.href = "index.html";
+      setTimeout(function () {
+        window.location.href = "index.html";
+      }, 1000);
     }
   }
 });
