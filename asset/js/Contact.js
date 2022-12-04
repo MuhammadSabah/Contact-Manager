@@ -31,7 +31,7 @@ const timeout = function (ms) {
 };
 
 if (localStorage.hasOwnProperty("currentAccount") === false) {
-  window.location.href = "http://127.0.0.1:5500/index.html";
+  window.location.href = "index.html";
 } else {
   // Get the current account from local storage
   let currAcc = JSON.parse(localStorage.getItem("currentAccount"));
@@ -116,7 +116,7 @@ if (localStorage.hasOwnProperty("currentAccount") === false) {
       containerApp.style.opacity = 0;
       timeout(1000).then(function () {
         localStorage.removeItem("currentAccount");
-        window.location.href = "http://127.0.0.1:5500/index.html";
+        window.location.href = "index.html";
       });
     }
   };
