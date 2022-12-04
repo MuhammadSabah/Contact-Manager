@@ -116,7 +116,7 @@ if (localStorage.hasOwnProperty("currentAccount") === false) {
       containerApp.style.opacity = 0;
       timeout(1000).then(function () {
         localStorage.removeItem("currentAccount");
-        window.location.href = "index.html";
+        window.location.replace("index.html");
       });
     }
   };
