@@ -1,3 +1,8 @@
+body {
+  /* padding: 0 !important; */
+  overflow-x: hidden;
+}
+
 main {
   width: 1200px;
   margin: 25px auto;
@@ -50,4 +55,8 @@ h1 {
 .table {
   margin-top: 35px;
   box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+}
+.app {
+  opacity: 100;
+  transition: all 1s;
 }
