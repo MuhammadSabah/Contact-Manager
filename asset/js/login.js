@@ -30,7 +30,7 @@ loginBtn.addEventListener("click", function (e) {
             "currentAccount",
             JSON.stringify(currentAccount)
           );
-          window.location.replace("http://127.0.0.1:5500/contacts.html");
+          window.location.replace("contacts.html");
         });
       } else {
         alert("Password is incorrect!");
