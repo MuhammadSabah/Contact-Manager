@@ -104,7 +104,8 @@ if (localStorage.hasOwnProperty("currentAccount") === false) {
       updateStorageAccounts();
       let modal = bootstrap.Modal.getInstance(addContactModal);
       modal.hide();
-      location.reload();
+      tableBody.innerHTML = "";
+      displayContacts(currAcc);
     }
   };
   saveAddContact.addEventListener("click", () => addContact());
