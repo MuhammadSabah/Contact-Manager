@@ -138,10 +138,11 @@ if (localStorage.hasOwnProperty("currentAccount") === false) {
         //
         updateStorageAccounts();
         //
-        row.remove();
-        tableBody.innerHTML = "";
-        displayContacts(currAcc);
-        // location.reload();
+        if (confirm("Are you sure?") === true) {
+          row.remove();
+          tableBody.innerHTML = "";
+          displayContacts(currAcc);
+        }
       }
     });
   };
