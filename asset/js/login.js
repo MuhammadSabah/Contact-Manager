@@ -20,7 +20,7 @@ loginBtn.addEventListener("click", function (e) {
       (acc) => acc.email === loginEmailField.value
     );
     if (currentAccount) {
-      if (+currentAccount.password === +loginPassField.value) {
+      if (currentAccount.password == loginPassField.value) {
         loginEmailField.value = loginPassField.value = "";
         loginPassField.blur();
         console.log(currentAccount);
