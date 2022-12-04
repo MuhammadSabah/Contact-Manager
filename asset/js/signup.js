@@ -9,21 +9,21 @@ const containerApp = document.querySelector(".app");
 signupBtn.addEventListener("click", function (e) {
   e.preventDefault();
   if (
-    signupEmailField.value === "" ||
-    signupNameField.value === "" ||
-    signupPassField.value === ""
+    signupEmailField.value == "" ||
+    signupNameField.value == "" ||
+    signupPassField.value == ""
   ) {
     alert("Field is empty!");
   } else {
     let newAccount = {
       fullName: signupNameField.value,
       email: signupEmailField.value,
-      password: +signupPassField.value,
+      password: signupPassField.value,
       contacts: [],
     };
     let updatedAccounts = JSON.parse(localStorage.getItem("accounts")) ?? [];
     let accExists = updatedAccounts.some(
-      (acc) => acc.email === newAccount.email
+      (acc) => acc.email == newAccount.email
     );
     if (accExists) {
       alert("Account already exists!");
@@ -42,4 +42,3 @@ signupBtn.addEventListener("click", function (e) {
     }
   }
 });
-
