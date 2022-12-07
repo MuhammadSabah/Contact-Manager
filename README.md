@@ -1,5 +1,5 @@
 # Web-JS-Assignment
 
 <h2>
-<a href="https://hama-js.netlify.app/">Demo</a>
+<a href="https://web-js-assignment.vercel.app/">Demo</a>
 </h2>
